@@ -22,7 +22,7 @@ public class BookController {
         model.addAttribute("books",bookList);
 
 
-        return "books";
+        return "books";  //html page retruned
     }
 
     @PostMapping("/add-book")
@@ -35,6 +35,6 @@ public class BookController {
     @GetMapping("/add-book")
     public String showAllAddedBooks(Model model){
         model.addAttribute("book",new Book());
-        return "add-book";
+        return "add-book";  // add-book html page returned
     }
 }
